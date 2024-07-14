@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: 100vh;
+}
+body{
+    margin: 0;
+    background-color:rgb(237, 233, 233) ;
+}
+.search-bar{
+    padding: 20px;
+    background-color: rgb(0, 191, 254);
+}
+.container{
+    background-color: white;
+    margin: 20px;
+    margin-top: 40px;
+}
+.nav-bar{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(237, 233, 233);
+}
+.nav-btn{
+    padding: 10px;
+    width: 33.33%;
+    box-shadow: 0px 0px 10px 2px rgb(232, 231, 231);
+}
+.nav-btn:hover{
+    background-color:rgb(237, 233, 233) ;
+}
+.sales-form{
+    display: none;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 40px 150px;
+    display: none;
+}
+.active {
+    display: grid;
+  
+}
+.sales-input{
+    display: block;
+    width: 350px;
+    margin-top: 10px;
+    padding: 10px;
+}
+    label, button{
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+#salesChart{
+    background-color: black;
+    width: 60%;
+    height: auto;
+}
+.input-area {
+    padding: 20px;
+}
+.search{
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5px;
+}
+.submit {
+    width: 350px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    background-color:rgb(0, 191, 254) ;
+    margin-top: 50px;
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

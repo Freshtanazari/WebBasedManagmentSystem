@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100vh;
+}
+body{
+    background-color: rgb(25, 79, 118);
+    background-size: cover;
+    height: 100%;
+    padding-top: 130px;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    border-radius: 10px;
+}
+.side-image{
+    width: 50%;
+    background-image: url(./side-image.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.loginform {
+    margin: 0 auto;
+    width: 50%;
+    /* opacity: 0.8; */
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+form{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+input.login {
+    display: block;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    width: 100%;
+    border: 2px solid rgb(31, 65, 104);
+    
+}
+
+.login-btn {
+    border: none;
+    background-color:rgb(31, 65, 104) ;
+    color:white;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.login-btn:hover{
+    background-color:rgb(0, 191, 254) ;
+    border: 2px solid rgb(31, 65, 104);
+    box-sizing: border-box;
+
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align:center ;
+}
+
+/* css for signup form */
+
+.signup{
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: space-between;
+}
+
+input.signup{
+    display: block;
+    padding: 10px;
+   margin: 5px;
+    border-radius: 5px;
+    flex-basis: calc(50% - 10px);
+    border: 2px solid rgb(31, 65, 104);
+    
+}
+
+/* all the screens that have 700px or less */
+@media screen and (max-width: 700px) { 
+   
+    .side-image{
+    visibility: hidden;
+    width: 0%;
+    }
+    .loginform{
+        width: 100%;
+    }
+    .signup{
+      display: block;
+      padding: 10px;
+    }
+    input.signup{
+        width: 100%;
+    }
+
+  }
