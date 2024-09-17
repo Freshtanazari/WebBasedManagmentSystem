@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100vh;
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 58%, rgba(31,65,104,1) 100%);
+    height: 100%;
+    /* padding-top: 130px; */
+    display: grid;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    margin: 0 auto;
+    width: 70%;
+    height: 80%;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.3);
+}
+.side-image{
+    width: 50%;
+    background-image: url(./side-image.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.loginform {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+form{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+input.login {
+    display: block;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    width: 100%;
+    border: 2px solid rgb(31, 65, 104); 
+}
+
+.login-btn {
+    border: none;
+    background-color:#090979 ;
+    color:white;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.login-btn:hover{
+    background-color:white ;
+    border: 2px solid #090979;
+    box-sizing: border-box;
+    color: #090979;
+
+}
+h1{
+    text-align: center;
+    color: #090979  ;
+    padding: 0;
+}
+p{
+    text-align:center ;
+}
+
+/* css for signup form */
+
+.signup{
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: space-between;
+}
+
+input.signup{
+    display: block;
+    padding: 10px;
+   margin: 5px;
+    border-radius: 5px;
+    flex-basis: calc(50% - 10px);
+    border: 2px solid rgb(31, 65, 104);
+    
+}
+
+/* all the screens that have 700px or less */
+@media screen and (max-width: 700px) { 
+   
+    .side-image{
+    visibility: hidden;
+    width: 0%;
+    }
+    .loginform{
+        width: 100%;
+    }
+    .signup{
+      display: block;
+      padding: 10px;
+    }
+    input.signup{
+        width: 100%;
+    }
+
+  }
