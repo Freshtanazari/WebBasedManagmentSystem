@@ -36,18 +36,11 @@ if (isset($_POST['login-btn'])){
                 header("Location: ./login.html?error=nouser");
                 exit();
             }
-
-
         }
-
     }
 
 }else{
     header("Location: ./index.html");
     exit();
 }
-$db_username;
-$db_password;
-
-
 ?>
